@@ -69,15 +69,15 @@
                         {% csrf_token %}
                         <div class="mb-3">
                             <label class="form-label">Ваше имя</label>
-                            <input type="text" class="form-control" placeholder="Имя">
+                            <input type="text" name="name" class="form-control" placeholder="Имя">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Email</label>
-                            <input type="email" class="form-control" placeholder="example@mail.ru">
+                            <input type="email" name="email" class="form-control" placeholder="example@mail.ru">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Сообщение</label>
-                            <textarea class="form-control" rows="4" placeholder="Ваш вопрос..."></textarea>
+                            <textarea class="form-control" name="massage" rows="4" placeholder="Ваш вопрос..."></textarea>
                         </div>
                         <button type="submit" class="btn" style="background-color: #1e4a4a; color: white;">Отправить
                         </button>
