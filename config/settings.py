@@ -118,7 +118,23 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# 1. MEDIA_URL
+# Это URL-адрес, по которому браузер будет обращаться к файлам.
+# Например: http://127.0.0.1:8000/media/avatar.jpg
+MEDIA_URL = '/media/'
+
+# 2. MEDIA_ROOT
+# Это абсолютный путь на жестком диске, где физически будут лежать файлы.
+# Мы создадим папку 'media' в корне проекта (рядом с manage.py).
+
+MEDIA_ROOT = BASE_DIR / 'media'
